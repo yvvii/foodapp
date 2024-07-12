@@ -25,7 +25,7 @@ export default function Checkout() {
     error,
     sendRequest,
     clearData,
-  } = useHttp("https://food-backend-hhof.onrender.com", requestConfig);
+  } = useHttp("https://food-backend-1.onrender.com/orders", requestConfig);
 
   const cartTotal = cartCtx.items.reduce((totalPrice, item) => totalPrice + item.quantity * item.price, 0);
 

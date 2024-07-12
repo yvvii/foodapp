@@ -8,7 +8,7 @@ export function Meals() {
     data: loadedMeals,
     isLoading,
     error,
-  } = useHttp("https://food-backend-hhof.onrender.com/meals", requestConfig, []);
+  } = useHttp("https://food-backend-1.onrender.com/meals", requestConfig, []);
   if (isLoading) {
     return <p className="center">Fetching meals.........</p>;
   }
